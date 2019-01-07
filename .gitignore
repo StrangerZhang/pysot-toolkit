@@ -1,0 +1,13 @@
+*/.idea/*
+*.so
+.DS_Store
+*.swp
+*/build/*
+*/__pycache__/*
+__pycache__/
+build/
+*.pyc
+test/*
+pysot/utils/region.c
+tracking_results
+tracking_dataset

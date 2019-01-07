@@ -245,7 +245,7 @@ export PYTHONPATH=/path/to/pysot-toolkit:$PYTHONPATH
 from pysot.datasets import DatasetFactory
 
 dataset = DatasetFactory.create_dataset(name=dataset_name,
-                                       	dataaset_root=datset_root,
+                                       	dataset_root=datset_root,
                                         load_img=False)
 for video in dataset:
     for idx, (img, gt_bbox) in enumerate(video):
@@ -262,7 +262,7 @@ from pysot.datasets import DatasetFactory
 from pysot.utils.region import vot_overlap
 
 dataset = DatasetFactory.create_dataset(name=dataset_name,
-                                       	dataaset_root=datset_root,
+                                       	dataset_root=datset_root,
                                         load_img=False)
 frame_counter = 0
 pred_bboxes = []

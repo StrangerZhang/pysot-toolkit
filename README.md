@@ -81,7 +81,7 @@ python bin/eval.py \
 	--show_video_level \ 	  			# wether to show video results
 	--vis 					  	# draw graph
 
-# you will see (Norm Precision not used in OTB evaluation)
+# you will see (Normalized Precision not used in OTB evaluation)
 -----------------------------------------------------
 |Tracker name| Success | Norm Precision | Precision |
 -----------------------------------------------------
@@ -272,12 +272,14 @@ for video in dataset:
             # init your tracker here
             pred_bbox.append(1)
         elif idx > frame_counter:
-        	# get tracking result here
+            # get tracking result here
             pred_bbox = 
             overlap = vot_overlap(pred_bbox, gt_bbox, (img.shape[1], img.shape[0]))
-            if overlap > 0:	# continue tracking
+            if overlap > 0: 
+	    	# continue tracking
                 pred_bboxes.append(pred_bbox)
-            else: # lost target, restart
+            else: 
+	    	# lost target, restart
                 pred_bboxes.append(2)
                 frame_counter = idx + 5
         else:

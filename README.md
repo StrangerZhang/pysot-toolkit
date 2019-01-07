@@ -212,8 +212,8 @@ python bin/eval.py \
 	--dataset VOT2018-LT \				# dataset name
 	--tracker_result_dir /path/to/tracker/dir \	# tracker dir
 	--trackers SiamRPN++ MBMD DaSiam-LT \		# tracker names 
-	--num 4 \				  					# evaluation thread
-	--vis \					  					# wether to draw graph
+	--num 4 \				  	# evaluation thread
+	--vis \					  	# wether to draw graph
 
 # you will see
 -------------------------------------------

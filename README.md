@@ -53,9 +53,9 @@ Download json files used in our toolkit [baidu pan](https://pan.baidu.com/s/1js0
 cd /path/to/pysot-toolkit
 python bin/eval.py \
 	--dataset_dir /path/to/dataset/root \		# dataset path
-	--dataset VOT2018 \							# dataset name(VOT2018, VOT2016)
+	--dataset VOT2018 \				# dataset name(VOT2018, VOT2016)
 	--tracker_result_dir /path/to/tracker/dir \	# tracker dir
-	--trackers ECO UPDT SiamRPNpp 				# tracker names 
+	--trackers ECO UPDT SiamRPNpp 			# tracker names 
 
 # you will see
 ------------------------------------------------------------
@@ -74,12 +74,12 @@ converted *.txt tracking results will be released soon
 cd /path/to/pysot-toolkit
 python bin/eval.py \
 	--dataset_dir /path/to/dataset/root \		# dataset path
-	--dataset OTB100 \							# dataset name(OTB100, UAV123, NFS, LaSOT)
+	--dataset OTB100 \				# dataset name(OTB100, UAV123, NFS, LaSOT)
 	--tracker_result_dir /path/to/tracker/dir \	# tracker dir
 	--trackers SiamRPN++ C-COT DaSiamRPN ECO  \	# tracker names 
-	--num 4 \				  					# evaluation thread
-	--show_video_level \ 	  					# wether to show video results
-	--vis 					  					# draw graph
+	--num 4 \				  	# evaluation thread
+	--show_video_level \ 	  			# wether to show video results
+	--vis 					  	# draw graph
 
 # you will see (Norm Precision not used in OTB evaluation)
 -----------------------------------------------------
@@ -199,9 +199,9 @@ python bin/eval.py \
 -----------------------------------------------------------------------------------------
 ```
 
-|     OTB100 Success Plot   		| OTB100 Precision Plot			|
+|     OTB100 Success Plot   	    | OTB100 Precision Plot	    |
 | --------------------------------- | ----------------------------- |
-|![](figs/OTB100_succ.png)  		|![](figs/OTB100_pre.png)  |
+|![](figs/OTB100_succ.png)  	    |![](figs/OTB100_pre.png)  	    |
 
 ### 3. Evaluation on VOT2018-LT
 
@@ -209,7 +209,7 @@ python bin/eval.py \
 cd /path/to/pysot-toolkit
 python bin/eval.py \
 	--dataset_dir /path/to/dataset/root \		# dataset path
-	--dataset VOT2018-LT \						# dataset name
+	--dataset VOT2018-LT \				# dataset name
 	--tracker_result_dir /path/to/tracker/dir \	# tracker dir
 	--trackers SiamRPN++ MBMD DaSiam-LT \		# tracker names 
 	--num 4 \				  					# evaluation thread

@@ -167,7 +167,7 @@ for video in dataset:
             # get tracking result here
 ```
 
-## 2. Restarted Evaluation
+### 2. Restarted Evaluation
 
 ```python
 from pysot.datasets import DatasetFactory

@@ -141,8 +141,6 @@ python bin/eval.py \
 -------------------------------------------
 ```
 
-![](./figs/VOT2018-LT.png)
-
 ## Get Tracking Results of Your Own Tracker
 
 Add pysot-toolkit to your PYTHONPATH
